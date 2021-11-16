@@ -29,13 +29,13 @@ public class BaseTest implements IPathConsts {
 
 		String browserValue = flib.readPropertyData(PROP_PATH, "browser");
 
-		if(browserValue.equalsIgnoreCase("chrome"))
+		if(browserValue.equalsIgnoreCase("Chrome"))
 		{
 			System.setProperty(CHROME_KEY, CHROME_VALUE);
 			driver=new ChromeDriver();
 		}
 
-		else if(browserValue.equalsIgnoreCase("firefox"))
+		else if(browserValue.equalsIgnoreCase("Firefox"))
 		{
 			System.setProperty(GECKO_KEY, GECKO_VALUE);
 			driver=new FirefoxDriver();
